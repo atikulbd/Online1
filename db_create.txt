@@ -1,0 +1,15 @@
+CREATE TABLE `leave_enrty` (
+  `ID` int(4) NOT NULL,
+  `EMPLOYEE_NAME` varchar(15) NOT NULL,
+  `LEAVE_START` varchar(30) NOT NULL,
+  `LEAVE_END` varchar(30) NOT NULL,
+  `STATUS` varchar(50) NOT NULL,
+  `REMARKS` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `leave_enrty`
+  ADD PRIMARY KEY (`ID`);
+
+ALTER TABLE `leave_enrty`
+  MODIFY `ID` int(4) NOT NULL AUTO_INCREMENT;
+COMMIT;
